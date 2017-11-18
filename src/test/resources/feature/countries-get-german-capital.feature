@@ -1,7 +1,7 @@
 Feature: Check german capital request against json file
 
   Background:
-    #refer to variables defined in the karate-config.js and to be used for this feature
+    # refer to variables defined in the karate-config.js and to be used for this feature
     * configure proxy internalProxy
     * url baseUrl
 
@@ -9,7 +9,7 @@ Feature: Check german capital request against json file
     Given path '/alpha/col'
     When method get
     Then status 200
-    And match $ == read('expected-response.json')
+    And match $ == read('expected-response.json') # compare response with content of json file
     #print out some values
    	# * def myJson = { foo: 'bar', baz: [1, 2, 3] }
    	# * print 'the value of myJson is:', myJson
