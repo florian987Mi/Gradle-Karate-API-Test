@@ -26,8 +26,8 @@ dependencies {
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
 
-       testCompile 'com.intuit.karate:karate-junit4:0.6.1'
-    testCompile 'com.intuit.karate:karate-apache:0.6.1'
-
+    // https://mvnrepository.com/artifact/com.intuit.karate/karate-junit4
+    testCompile 'com.intuit.karate:karate-junit4:0.6.1'
+  	testCompile group: 'com.intuit.karate', name: 'karate-junit4', version: '0.6.1'
 }
 
